@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Display City Info</title>
+	<style>
+	.content {
+		max-width: 500px;
+		margin: auto;
+	}
+	</style>
+</head>
+<body>
+	<div class ="content">
+		<h2>Display City Info</h2>
+		<p th:inline="text"> [[${city.name}]] </p>
+		<p th:inline="text"> [[${city.countryCode}]] </p>
+		<p th:inline="text"> [[${city.countryName}]] </p>
+		<p th:inline="text"> [[${city.district}]] </p>
+		<p th:inline="text"> [[${city.population}]] </p>
+		<p th:inline="text"> [[${city.temp}]] &#176F</p>
+		<p th:inline="text"> [[${city.time}]] </p> 
+	</div>
+</body>
+</html>
